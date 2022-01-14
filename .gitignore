@@ -2,6 +2,7 @@
 
 # dependencies
 /poketimes/node_modules
+myapp/node_modules/
 
 # testing
 /poketimes/coverage

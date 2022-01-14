@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link, NavLink, withRouter } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="nav-wrapper red darken-3">
+    <nav className="nav-wrapper purple darken-4">
       <div className="container">
-        <a className="brand-logo">Poke' Times</a>
+        <a className="brand-logo left">Poke'Times</a>
         <ul className="right">
-          <li><a href="/">Home</a></li>
-          <li><a href='/about'>About</a></li>
-          <li><a href='/contact'>Contact</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><NavLink to="/about">About</NavLink></li>
+          <li><NavLink to="/contact">Contact</NavLink></li>
         </ul>
       </div>
-    </nav> 
+    </nav>
   )
 }
 
-export default Navbar
+export default withRouter(Navbar);
